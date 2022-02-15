@@ -45,6 +45,7 @@ def main():
         config_path = Path(config_grid_dir, config).absolute().as_posix()
         
         outdir = outdir_from_config(config)
+        os.makedirs(outdir, exist_ok=True)
         
         cmds = '\n\n'
         cmds += f'lstchain_mc_trainpipe --fg {dl1_gamma_train} --fp {dl1_proton_train} -c {config_path} -o {outdir} \n\n'
