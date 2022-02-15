@@ -1,6 +1,7 @@
 #!/bin/sh
 
 ### 1 step : choice material (gpu , node , cpu , task )
+#SBATCH --partition=long
 #SBATCH --job-name={JOB_NAME}
 
 #SBATCH --nodes=1
