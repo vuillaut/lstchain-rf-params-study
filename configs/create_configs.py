@@ -21,7 +21,7 @@ def write_config(config, filename):
         json.dump(config, file_handle, indent=4)
 
         
-write_config(standard_config, 'std_config.json')
+write_config(standard_config, Path(outdir, 'std_config.json'))
         
 
 for d in depths:
