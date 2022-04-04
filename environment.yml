@@ -1,4 +1,4 @@
-name: lstMCpipe
+name: lstchain-rf-params-study
 channels:
   - bryankim96
   - cta-observatory
